@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jT2i+FXDsDmnoljGmXgp1r4NzKlXFumhmPHOkqBeWFE=",
+  "Source": "aspnet-serverfetch",
+  "BasePath": "_content/aspnet-serverfetch",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,40 @@
+@page
+@model web_api_hello.Pages.IndexModel
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Users</h2>
+
+    <hr>
+
+    @if (Model.UsersContainer.Results != null)
+    {
+        foreach (var user in Model.UsersContainer.Results)
+        {
+            if (user.Picture != null)
+            {
+                <div class="photo"><img src="@user.Picture.Medium" /></div>
+            }
+            if (user.Name != null)
+            {
+
+                <div class="name">
+                    <span>@user.Name.First</span>
+                    <span>@user.Name.Last</span>
+                </div>
+            }
+        }
+    }
+
+</body>
+
+</html>
